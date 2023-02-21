@@ -15,7 +15,7 @@ const styles = makeStyles({
           }
     },
     logo: {
-        width: "15%", 
+        width: "40%", 
         ['@media (max-width:780px)']: { 
            display: "none"
            }
@@ -43,18 +43,21 @@ function NavBar() {
     const classes = styles()
     return (
             <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>   
+                <a href="https://www.vendia.com/">
                 <img src={vendiaLogo} className={classes.logo}/> 
                 <img src={vendiaLogoMobile} className={classes.logoMobile}/> 
-                <Typography variant="h6" className={classes.menuItem}>
+                </a>
+                <Typography variant="h5" className={classes.menuItem}>
                     FDA
                 </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
+                <Typography variant="h5" className={classes.menuItem}>
                     Bavaria
                 </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
+                <Typography variant="h5" className={classes.menuItem}>
                     Other... 
                 </Typography>
-                <CustomButton txt="Log in??"/>
+
+                <CustomButton txt="Logout"/>
             </Toolbar>
     )
 }
