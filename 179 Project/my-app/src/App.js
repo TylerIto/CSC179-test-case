@@ -1,11 +1,11 @@
-//import logo from './logo.svg';
+import logo from './LogoBavaria.JPG';
 import './App.css';
 import useJaneHopkins from './hooks/useJaneHopkins';
 
 function App() {
   
   const { entities } = useJaneHopkins();
-
+/*
   const addPatient = async() =>
   {
       const addPatientResponse = await entities.patient.add(
@@ -16,10 +16,15 @@ function App() {
         });
       console.log(addPatientResponse);
   }
+  */
 
   return (
     <div className="App">
-      <button onClick={() => { addPatient(); } }>Add Patient</button>
+      <img src={logo} alt="logo" /><br></br>
+      <label>LOGGED IN AS: ADMIN</label><br></br>
+      <button>FDA</button><br></br>
+      <button>RESULTS</button><br></br>
+      <button>REPORTS</button><br></br>
     </div>
   );
 }
