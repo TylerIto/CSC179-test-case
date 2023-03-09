@@ -8,7 +8,7 @@ function Navbar()
         <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/Bavaria">Bavaria</Link></li>
-            <li><Link to="/FDA">FDA</Link></li>
+            <li><Link to="/FDAHome">FDA Home</Link></li>
             <li><Link to="/Login">JaneHopkins Login</Link></li>
         </ul>
     </nav>);

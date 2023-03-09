@@ -6,7 +6,7 @@ import Home from "./Home";
 import Bavaria from "./Bavaria"
 import JaneHopkinsLogIn from './JaneHopkinsLogIn';
 import Login from './Login';
-
+import FDAHome from './FDAHome';
 
 
 function App()
@@ -18,6 +18,7 @@ function App()
           <Route index element={<Home />} />
           <Route path="bavaria" element={<Bavaria />} />
           <Route path="Login" element={<Login />} />
+          <Route path="FDAHome" element={<FDAHome />} /> 
         </Route>
 
       </Routes>
