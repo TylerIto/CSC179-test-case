@@ -1,32 +1,23 @@
-import logo from './LogoBavaria.JPG';
 import './App.css';
-import useJaneHopkins from './hooks/useJaneHopkins';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import Home from "./Home";
+import Bavaria from "./Bavaria"
 
-function App() {
-  
-  const { entities } = useJaneHopkins();
-/*
-  const addPatient = async() =>
-  {
-      const addPatientResponse = await entities.patient.add(
-        {
-          name: "Billy",
-          dob:  "January 17, 2000",
-          insuranceNumber: "11432190",
-        });
-      console.log(addPatientResponse);
-  }
-  */
-
+function App()
+{
   return (
-    <div className="App">
-      <img src={logo} alt="logo" /><br></br>
-      <label>LOGGED IN AS: ADMIN</label><br></br>
-      <button>FDA</button><br></br>
-      <button>RESULTS</button><br></br>
-      <button>REPORTS</button><br></br>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="bavaria" element={<Bavaria />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
+
 }
 
 export default App;
