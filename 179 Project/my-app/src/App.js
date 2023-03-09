@@ -5,7 +5,7 @@ import Layout from "./Layout";
 import Home from "./Home";
 import Bavaria from "./Bavaria"
 import JaneHopkinsLogIn from './JaneHopkinsLogIn';
-
+import Login from './Login';
 
 
 
@@ -17,7 +17,7 @@ function App()
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="bavaria" element={<Bavaria />} />
-          <Route path="JaneHopkinsLogIn" element={<JaneHopkinsLogIn />} />
+          <Route path="Login" element={<Login />} />
         </Route>
 
       </Routes>
