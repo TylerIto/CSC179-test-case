@@ -9,7 +9,7 @@ function Navbar()
             <li><Link to="/">Home</Link></li>
             <li><Link to="/Bavaria">Bavaria</Link></li>
             <li><Link to="/FDA">FDA</Link></li>
-            <li><Link to="/JaneHopkins">JaneHopkins</Link></li>
+            <li><Link to="/JaneHopkinsLogin">JaneHopkins Login</Link></li>
         </ul>
     </nav>);
 }

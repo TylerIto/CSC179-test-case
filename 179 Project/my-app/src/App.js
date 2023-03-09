@@ -4,6 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Home";
 import Bavaria from "./Bavaria"
+import JaneHopkinsLogIn from './JaneHopkinsLogIn';
+
+
+
 
 function App()
 {
@@ -13,7 +17,9 @@ function App()
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="bavaria" element={<Bavaria />} />
+          <Route path="JaneHopkinsLogIn" element={<JaneHopkinsLogIn />} />
         </Route>
+
       </Routes>
     </BrowserRouter>
   );
