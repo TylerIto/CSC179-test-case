@@ -56,10 +56,17 @@ const styles = makeStyles({
 })
 
 
+<<<<<<< Updated upstream
 function Login() {
   const classes = styles();
   return (
     <div className="Login">
+=======
+function App() {
+  const classes = styles();
+  return (
+    <div className="App">
+>>>>>>> Stashed changes
       <ThemeProvider theme = {theme} >
         <NavBar/>  
 
@@ -90,4 +97,8 @@ function Login() {
   );
 }
 
+<<<<<<< Updated upstream
 export default Login;
+=======
+export default App;
+>>>>>>> Stashed changes
