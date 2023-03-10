@@ -1,7 +1,11 @@
+import './FDA.css';
+
 const searchHeader = document.querySelector('#search-header');
 const dateRangeInput = document.querySelector('#date-range-input');
 const nameInput = document.querySelector('#name-input');
 const statusInput = document.querySelector('#status-input');
+
+function FDASearch(){
 
 function handleSearch(event) {
   event.preventDefault(); // disallows default value searching
@@ -16,7 +20,15 @@ function handleSearch(event) {
     Name: ${name}
     Status: ${status}
   `);
-}
+  }
 
 // Add an event listener to the form to handle the search when it is submitted
-searchHeader.addEventListener('submit', handleSearch);
+ searchHeader.addEventListener('submit', handleSearch);
+ 
+ return(
+  <div className="FDASearch">
+    <h1>FDA Search</h1>
+  </div>
+  );
+}
+ export default FDASearch;

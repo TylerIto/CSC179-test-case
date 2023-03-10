@@ -2,7 +2,7 @@ import './FDA.css';
 import useJaneHopkins from './useFDA';
 import React, { useState } from "react";
 import CustomLayout from './FDALayout';
-function FDAResults() {
+function FDAOngoing() {
   const {entities} = useJaneHopkins();
   const [patientName, setName] = useState("");
   const [dob, setDob] = useState("");
@@ -18,10 +18,10 @@ function FDAResults() {
   }
 
   return(
-  <div className="FDAResults">
-    <h1>FDA Results</h1>
+  <div className="FDAOngoing">
+    <h1>FDA Ongoing</h1>
   </div>
   );
 }
 
-export default FDAResults;
+export default FDAOngoing;

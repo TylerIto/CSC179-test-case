@@ -9,11 +9,5 @@ const client = createVendiaClient({
 
 const {entities} = client;
 
-const usemyFDA = () => {
-    return {entities}
-}
-export default function usemyFDA() {
-    return(
-        <div>usemyFDA</div>
-    )
-}
+const useFDA = () => {return {entities}}
+export default useFDA;
