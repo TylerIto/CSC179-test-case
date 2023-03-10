@@ -11,7 +11,7 @@ import FDAResults from "./FDAView/FDAResults"
 import FDANew from "./FDAView/FDANew"
 import FDAOngoing from "./FDAView/FDAOngoing"
 import FDAFinish from "./FDAView/FDAFinish";
-
+import Login from "./Login";
 function App()
 {
   return (
@@ -20,6 +20,7 @@ function App()
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="bavaria" element={<Bavaria />} />
+          <Route path="Login" element={<Login />} />
         </Route>
         <Route path="/FDAView" element={<FDALayout />}>  
           <Route path="FDADash" element={<FDADash />} />
@@ -28,6 +29,7 @@ function App()
           <Route path="FDANew" element={<FDANew />} />
           <Route path="FDAOngoing" element={<FDAOngoing />} />
           <Route path="FDAFinish" element={<FDAFinish />} />
+
         </Route>
       </Routes>
     </BrowserRouter>
